@@ -14,11 +14,12 @@ L'idée de base est de créer une démarche descendante: chaque étape est "rela
 
 - La division de calque est une directive relative a un axe donné (largeur, hauteur, etc...)
 - La division peut être "automatique" ou "contrainte"
+
   - Automatique: Diviser (selon un axe donné) le calque parent en "N" parties égales.
   - Contrainte: Diviser (selon un axe donné) le calque parent, dont une des partie a une contrainte de dimension.
 
     - ### _Contrainte simple: contrainte en début, en fin ou centrée_
-      > _On note "D" la dimension totale (selon l'axe donné) du parent, "C" celle de la contrainte_ D=100;C=20
+      > _On note "D" la dimension totale (selon l'axe donné) du parent, "C" celle de la contrainte_ D=100; C=20
       >
       > #### Contrainte "en début":
       >
@@ -39,5 +40,9 @@ L'idée de base est de créer une démarche descendante: chaque étape est "rela
       > Une troisième partition est positionnée à "D-{(D-C)/2}" _60_ et a comme dimension "(D-C)/2" _40_.
     - ### _contrainte complexe, contrainte qui est "positionnée"_
       **NB: dans ce cas de figure la division crée plusieurs calque "enfants**
+      > _On note "P" le positionement de la contrainte_ D=100; C=50; P=10
+      > La dépendance d'origine et la dépendance de taille
+      > Le premier enfant est positionné à "0" et a comme dimension "P" _10_.
+      > Le second enfant est positionné à "P+C" _60_ et a comme dimension "D-(P+C)" _40_.
 
     >
